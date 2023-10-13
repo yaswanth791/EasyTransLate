@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 15px;
+}
+
+.main {
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.navigation {
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options-tab {
+  width: 18rem;
+}
+
+.option-link:link,
+.option-link:active {
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  list-style: none;
+}
+
+.header {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 15px;
+  position: relative;
+  background-image: linear-gradient(to bottom right, #ffe4d6 40%, #befff7);
+  opacity: 1;
+}
+
+.animate-span {
+  overflow: hidden;
+}
+
+.logo--name {
+  height: 10rem;
+  font-size: 8rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 5px;
+  opacity: 1;
+  transform: translateY(90%);
+}
+
+.logo--name::before {
+  content: "Easy Convert";
+  position: absolute;
+  color: transparent;
+  top: 150px;
+  left: 360px;
+  -webkit-text-stroke-width: 0px;
+}
+
+.p--tag {
+  display: inline;
+}
+
+.arrow {
+  transform: translate(-1500%);
+}
+
+.magic--btn {
+  display: block;
+}
+
+.sub-head {
+  width: 53rem;
+}
+
+.sub-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.magic--btn {
+  height: 3rem;
+  width: 10rem;
+  position: absolute;
+  bottom: 2rem;
+  background-color: transparent;
+}
+
+.head-bottom {
+  min-height: 17rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  overflow-x: hidden;
+}
+
+.color--style {
+  background-image: linear-gradient(#facbea, #04364a);
+  height: 100%;
+}
+
+.color--style:nth-child(even) {
+  background-image: linear-gradient(#04364a, #facbea);
+}
+
+.body {
+  min-height: 100vh;
+  min-width: 95vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #64ccc5;
+  position: relative;
+}
+
+.body--name {
+  font-size: 8rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #04364a;
+}
+
+/* .body--name::before {
+  content: "Translate Here";
+  position: absolute;
+  top: 50px;
+  height: 15rem;
+  transform: scale(1, -1);
+  opacity: initial;
+} */
+
+.option-drop {
+  height: 3.5rem;
+  width: 20rem;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 3px solid #04364a;
+  color: grey;
+}
+.option-drop:active,
+.option-drop:focus {
+  border: 3px solid #04364a;
+}
+
+.lang--select {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: end;
+}
+
+.indicators {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+option {
+  background-color: #04364a;
+  color: white;
+}
+
+.btn-optn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swap--btn {
+  height: 40px;
+  width: 40px;
+  background-color: #dadada92;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.swap-img {
+  height: 30px;
+  width: 30px;
+}
+
+.translate--section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+textarea {
+  background-color: transparent;
+  resize: none;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.5rem;
+  outline: none;
+  border: 3px solid #04364a;
+  border-top: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.internet--Popup--page {
+  height: 100vh;
+  width: 98%;
+  position: absolute;
+  background-color: rgba(176, 171, 171, 0.717);
+  z-index: 1;
+  display: none;
+}
+
+.internet--popup {
+  height: 15rem;
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.wifi-img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
